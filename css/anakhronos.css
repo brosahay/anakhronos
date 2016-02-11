@@ -1,0 +1,127 @@
+body{
+	font-family: 'Lato', sans-serif;
+	height: 100%;
+	width: 100%;
+	overflow-y: hidden;
+}
+.navbar{
+	visibility: none;
+	position: fixed;
+	z-index: 100;
+	border-radius: 0px;
+	width: 100%;
+	border-bottom-color: rgb(211, 47, 47);
+	font-size: 20px;
+	line-height: 70px;
+	vertical-align: middle;
+}
+#navelm ul li a{
+	margin-top: 17px;
+}
+/* vertical-centered text */
+.text-vcenter {
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* padded section */
+.pad-section {
+	height: 100%;
+	width: 100%;
+  padding: 100px 0;
+  background-color: #e7e7e7;
+}
+.pad-section img {
+  width: 100%;
+}
+
+#home{
+	background: url('../img/sliders/home0.jpg') no-repeat center center fixed;
+	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#onstage_slider{
+	background: url('../img/sliders/onstage.jpg') no-repeat center center fixed;
+	height: 800px;
+	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#offstage_slider{
+	background: url('../img/sliders/offstage.jpg') no-repeat center center fixed;
+	height: 800px;
+	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#starnites_slider{
+	background: url('../img/sliders/starnites.jpg') no-repeat center center fixed;
+	height: 800px;
+	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#registration{
+	background: #D32F2F no-repeat center center fixed;
+	color: white;
+}
+.navbar{
+	margin-bottom:0px;
+	margin-bottom: 2px #D32F2F solid;
+}
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
+
+.event-img{
+	max-width: 192px;
+	max-height: 192px;
+	border-radius: 50%;
+	background:#CA0000;
+}
+.event-img:hover{
+	opacity: .7;
+}
+
+#navelm li a:hover,#navelm li a:active{
+	color:#D32F2F;
+	border-bottom: 2px solid;
+	border-color: #D32F2F;
+}
+
+#navelm ul li a img:hover{
+	border-bottom: 0px solid;
+	border-color: #D32F2F;
+}
+
+footer{
+	bottom: 0;
+	height: 20px;
+	padding: 10px 0;
+	width: 100%;
+	font-family: Lato;
+}
