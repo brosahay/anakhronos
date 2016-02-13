@@ -4,7 +4,7 @@ $(document).ready(function() {
   $ww= $(window).width();
   console.log($wh);
   console.log($ww);
-  console.log($("#about_us").offset(top));
+  
   $("#home").height($wh);
   $(".home-overlay").height($wh);
   $(".pad-section").height(0.75*$wh);
@@ -25,7 +25,6 @@ $(document).ready(function() {
       $('#nmain').slideUp("easing");
     }
 
-
     if ($(window).scrollTop() > 1850) {
       $('#e1').fadeIn(3000);
       $('#e2').fadeIn(3050);
@@ -38,18 +37,21 @@ $(document).ready(function() {
       $('#e6').fadeIn(4000);
     }
   });
-	$("#scroll_icon").click(function(event){
+	
+  $("#scroll_icon").click(function(event){
     event.preventDefault();
     $('html,body').animate({
       scrollTop: $($(this).attr("href")).offset().top
     },2000);
   });
+  
   $("nav div ul li a").click(function(event){
     event.preventDefault();
     $('html,body').animate({
       scrollTop: $($(this).attr("href")).offset().top
     },2000);
   });
+  
   var backgrounds = Array('./img/sliders/home0.jpg', './img/sliders/home2.jpg', './img/sliders/home3.jpg', './img/sliders/home4.jpg');
   var current = 0;
   var home=$(document.getElementById('home'));  
@@ -67,5 +69,11 @@ $(document).ready(function() {
       })
     }
     nextBackground();
+  });
+
+  $("#submit").click(function(e){
+    e.preventDefault();
+    var name = $("#name").val();
+    var college = $("#college").val();
   });
 });
