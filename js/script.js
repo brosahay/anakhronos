@@ -8,8 +8,10 @@ function preload(arrayOfImages) {
 
 // Usage:
 
-preload(['./img/sliders/home0.jpg', './img/sliders/home2.jpg', './img/sliders/home3.jpg', './img/sliders/home4.jpg']);
+
 $(document).ready(function(){
+  preload(['./img/sliders/home0.jpg', './img/sliders/home2.jpg', './img/sliders/home3.jpg', './img/sliders/home4.jpg']);  
+  $('#loader').css("display","none");
   $wh= $(window).height();
   $ww= $(window).width();
   $("#home").height($wh);
