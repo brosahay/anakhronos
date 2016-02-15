@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  $('#loader').css("display","none");
   $wh= $(window).height();
   $ww= $(window).width();
   $("#home").height($wh);
