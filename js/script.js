@@ -1,3 +1,14 @@
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+        // Alternatively you could use:
+        // (new Image()).src = this;
+    });
+}
+
+// Usage:
+
+preload(['./img/sliders/home0.jpg', './img/sliders/home2.jpg', './img/sliders/home3.jpg', './img/sliders/home4.jpg']);
 $(document).ready(function(){
   $wh= $(window).height();
   $ww= $(window).width();
