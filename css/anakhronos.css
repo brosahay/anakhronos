@@ -42,6 +42,10 @@ body{
 
 #home{
 	background: url('../img/sliders/home0.jpg') no-repeat center center fixed;
+	background: url('../img/sliders/home0.jpg') no-repeat center center fixed,
+							url('../img/sliders/home2.jpg') no-repeat center center fixed,
+							url('../img/sliders/home3.jpg') no-repeat center center fixed,
+							url('../img/sliders/home4.jpg') no-repeat center center fixed;
 	position: relative;
 	width: 100%;
 	-webkit-background-size: cover;
