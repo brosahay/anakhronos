@@ -87,6 +87,12 @@ body{
 	margin-bottom:0px;
 	margin-bottom: 2px #D32F2F solid;
 }
+#about_fest p{
+	font-size: 16px;
+	text-align: justify;
+	word-spacing: 0.5em;
+	letter-spacing: 0.15em;
+}
 @media (min-width: 768px){
 	.navbar-nav{
 		float:none;
@@ -99,6 +105,12 @@ body{
 	#about_fest,#onstage_detail,#offstage_detail,#contactus{
 		height: 100% !important;
 		width: 100%;
+	}
+	#about_fest p{
+	font-size: 15px;
+	text-align: justify;
+	word-spacing: 0.2em;
+	letter-spacing: 0.1em;
 	}
 }
 .event-img{
