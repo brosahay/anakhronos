@@ -92,12 +92,15 @@ body{
 	margin-bottom: 2px #D32F2F solid;
 }
 #about_fest p{
-	font-size: 15px;
+	font-size: 1em;
 	text-align: justify;
 	word-spacing: 0.5em;
 	letter-spacing: 0.15em;
 }
 @media (min-width: 768px){
+	#about_fest p{
+		font-size: 10px;
+	}
 	.navbar-nav{
 		float:none;
 		margin: 0 auto;
