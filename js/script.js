@@ -38,17 +38,17 @@ $(document).ready(function(){
       scrollTop: $($(this).attr("href")).offset().top
     },2000);
   });
-  
+
   $("nav div ul li a").click(function(event){
     event.preventDefault();
     $('html,body').animate({
       scrollTop: $($(this).attr("href")).offset().top
     },2000);
   });
-  
+
   var backgrounds = Array('./img/sliders/home0.jpg', './img/sliders/home2.jpg', './img/sliders/home3.jpg', './img/sliders/home4.jpg');
   var current = 0;
-  var home=$(document.getElementById('home'));  
+  var home=$(document.getElementById('home'));
 
   $(window).ready(function(){
     function nextBackground(){
@@ -113,14 +113,14 @@ $(document).ready(function(){
       $("#ph_number-input-group span").addClass("invisible");
     }
     if(error)
-      return false;
+    return false;
     if (!error){
       $.ajax({
         url: "https://docs.google.com/forms/d/1MxMvOZGrt7xN1qJ9p36vn9onAcxPj8rMmWwfh3LVPjk/formResponse",
-        data: { 
-          "entry.2005620554" : name, 
-          "entry.1045781291" : email, 
-          "entry.1065046570" : college, 
+        data: {
+          "entry.2005620554" : name,
+          "entry.1045781291" : email,
+          "entry.1065046570" : college,
           "entry.1166974658" : ph_number,
           "entry.839337160" : events
         },
@@ -155,9 +155,9 @@ $(document).ready(function(){
           }
         }
       });
-      }
-else {
-  $("#response").removeClass("alert-success").addClass("alert-danger").html("There was an error submitting in your response. Kindly get back to the team at nikunjakanaiky@gmail.com. We would be more than happy to help you.").fadeOut(5000);
-}
-});
+    }
+    else {
+      $("#response").removeClass("alert-success").addClass("alert-danger").html("There was an error submitting in your response. Kindly get back to the team at nikunjakanaiky@gmail.com. We would be more than happy to help you.").fadeOut(5000);
+    }
+  });
 });
