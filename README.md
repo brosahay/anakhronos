@@ -2,8 +2,6 @@ Website: Anakhronos 2016
 ================
 
 
-[website](https://revosftw.github.io/anakhronos/)
-
 Architecture/Philosophies
 =========================
 
